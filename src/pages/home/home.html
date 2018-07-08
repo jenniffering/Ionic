@@ -1,17 +1,30 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar  color="primary">
+    <ion-title text-center>Home</ion-title>
+    <ion-buttons start>
+        <button ion-button icon.only>
+          <ion-icon name="md-unlock"> 
+          </ion-icon>
+        </button>
+      </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+  <h4 text-center>BoarTask</h4>  
+    <ion-item>
+      <ion-label color="primary" stacked>Usuario</ion-label>
+      <ion-input type="email" placeholder="Usuario o Email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>Contraseña</ion-label>
+      <ion-input type="password" placeholder="Contraseña"></ion-input>
+    </ion-item>
+  
   <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
+    <button ion-button block color="secondary">Entrar</button>
   </p>
   <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
+    <button ion-button clear block>Registrarse</button>
   </p>
 </ion-content>
